@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>*</members>
+        <name>ApexClass</name> <!-- For all Apex Classes -->
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomObject</name> <!-- For all Custom Objects -->
+    </types>
+    <types>
+        <members>*</members>
+        <name>Profile</name> <!-- For all Profiles -->
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomField</name> <!-- For custom fields in custom objects -->
+    </types>
+    <types>
+        <members>*</members>
+        <name>Layout</name> <!-- For Page Layouts -->
+    </types>
+    <types>
+        <members>*</members>
+        <name>PermissionSet</name> <!-- For Permission Sets -->
+    </types>
+    <types>
+        <members>*</members>
+        <name>Workflow</name> <!-- For Workflows -->
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomTab</name> <!-- For Custom Tabs -->
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomApplication</name> <!-- For Custom Apps -->
+    </types>
+    <types>
+        <members>*</members>
+        <name>StaticResource</name> <!-- For Static Resources -->
+    </types>
+    <types>
+        <members>*</members>
+        <name>ApexTrigger</name> <!-- Correct metadata type for Apex Triggers -->
+    </types>
+    <version>57.0</version> <!-- Replace with your org's API version -->
+</Package>

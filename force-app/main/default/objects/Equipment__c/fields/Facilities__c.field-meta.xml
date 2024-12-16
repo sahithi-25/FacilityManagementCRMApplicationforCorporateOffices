@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Facilities__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>The facility where the equipment is installed or used.</description>
+    <externalId>false</externalId>
+    <label>Facilities</label>
+    <referenceTo>Facilities__c</referenceTo>
+    <relationshipLabel>Equipment</relationshipLabel>
+    <relationshipName>Equipment</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

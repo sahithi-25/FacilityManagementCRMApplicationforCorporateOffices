@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Approval_Email_Alert</fullName>
+        <description>Approval Email Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>maintenancestaff12@gmail.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>ServiceRequest/Approval_Notification_Template_1734346474468</template>
+    </alerts>
+    <alerts>
+        <fullName>Rejection_Email_Alert</fullName>
+        <description>Rejection Email Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>maintenancestaff12@gmail.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>ServiceRequest/Rejection_Notification_Template_1734346508629</template>
+    </alerts>
+    <alerts>
+        <fullName>Submission_Email_Alert</fullName>
+        <description>Submission Email Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>maintenancestaff12@gmail.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>ServiceRequest/Submission_Template_1734346304505</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Approved</fullName>
+        <field>Status__c</field>
+        <literalValue>Approved</literalValue>
+        <name>Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Rejected</fullName>
+        <field>Status__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Submitted</fullName>
+        <description>Set Service Request Status to Pending on submission.</description>
+        <field>Status__c</field>
+        <literalValue>Pending</literalValue>
+        <name>Submitted</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Submitted_Request</fullName>
+        <field>Status__c</field>
+        <literalValue>Pending</literalValue>
+        <name>Submitted Request</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+</Workflow>
